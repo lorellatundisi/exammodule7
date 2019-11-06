@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>FORM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Yeon+Sung&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css" />
+
+    <style>
+        .breadcrumb-container {
+            padding-top: 90px;
+        }
+
+        body {
+            background: #b6ff00;
+            color: black;
+            margin: 2%;
+           
+
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <h3>Riempi questa form : </h3>
+        <form>
+
+            <div class="form-group">
+                <label>Nome:</label>
+                <input class="form-control" type="text" name="firstName" value=""
+                       required pattern="[a-zA-Z]{2,}" />
+            </div>
+
+            <div class="form-group">
+                <label>Cognome:</label>
+                <input class="form-control" type="text" name="firstName" value=""
+                       required pattern="[a-zA-Z]{2,}" />
+            </div>
+
+            <div class="form-group">
+                <label>Nazione:</label>
+
+                <div class="row">
+                    <div class="col-9 col-md-5">
+                        <input type="text" placeholder="Via" class="form-control" />
+                    </div>
+                    <div class="col-3 col-md-1">
+                        <input type="text" placeholder="Numero" class="form-control" />
+                    </div>
+                    <div class="d-md-none">&nbsp;</div>
+                    <div class="col-12 col-md-3">
+                        <input type="text" placeholder="Città" class="form-control" />
+                    </div>
+                    <div class="d-md-none">&nbsp;</div>
+                    <div class="col-12 col-md-3">
+                        <select name="state" class="form-control">
+                            <option value="IT">Italia</option>
+                            <option value="UK">UK</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Telefono:</label>
+                <input class="form-control" type="tel" name="phone" />
+            </div>
+
+
+            <div class="form-group">
+                <label>E-mail:</label>
+                <input class="form-control" type="email" name="mail" />
+            </div>
+
+            <div class="form-group">
+                <label>Data di nascita:</label>
+                <input class="form-control" type="date" />
+          
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Invia" class="btn btn-success" />
+                <input type="reset" value="Annulla" class="btn btn-dark"/>
+            </div>
+
+        </form>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Copyright (...)</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
